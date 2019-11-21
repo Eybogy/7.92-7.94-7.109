@@ -5,22 +5,19 @@ import java.util.Scanner;
 
 public class Two {
     public static Integer count(int n) {
-        if (n != 0) {
             return n;
-        }
-        return  0;
     }
 
     static void degree() {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите первое число");
         int a = in.nextInt();
-        int counter = a;
         System.out.println("Введите второе число");
         int n = in.nextInt();
+        int counter = n;
         int result = 1;
         while (counter != 0) {
-            result *= count(n);
+            result *= count(a);
             counter -= 1;
         }
         System.out.println(result);
