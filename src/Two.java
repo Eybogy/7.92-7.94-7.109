@@ -4,11 +4,15 @@ import java.util.Scanner;
 ральное n, вычисляющую и печатающую a в степени n без использования вызова функции возведения в степень. */
 
 public class Two {
-    public static Integer count(int n) {
-            return n;
+    public static void count(int a, int n, int result) {
+        if (n == 0) {
+            System.out.println(result);
+        } else {
+            result *= a;
+            count(a, n - 1, result);
+        }
     }
-
-    static void degree() {
+   static void degree() {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите первое число");
         int a = in.nextInt();
@@ -16,10 +20,6 @@ public class Two {
         int n = in.nextInt();
         int counter = n;
         int result = 1;
-        while (counter != 0) {
-            result *= count(a);
-            counter -= 1;
-        }
-        System.out.println(result);
+        count(a, n, result);
     }
 }

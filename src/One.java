@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class One {
     public static void count(int n1, int n2, int result) {
         if (n1 == 0) {
-            result += 0;
             System.out.println(result);
         } else {
             result += n2;
