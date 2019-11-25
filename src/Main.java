@@ -10,15 +10,13 @@ public class Main {
             int n1 = in.nextInt();
             System.out.println("Введите второе число");
             int n2 = in.nextInt();
-            int result = 0;
-            System.out.println(One.count(n1, n2, result));
+            System.out.println(One.count(n1, n2));
         } else if (x == 2) {
             System.out.println("Введите первое число");
             int a = in.nextInt();
             System.out.println("Введите второе число");
             int n = in.nextInt();
-            int result = 1;
-            System.out.println(Two.count(a, n, result));
+            System.out.println(Two.count(a, n));
         } else if (x == 3) {
             System.out.println("Введите первое число");
             int a = in.nextInt();

@@ -2,11 +2,10 @@
     ральное n, вычисляющую и печатающую a в степени n без использования вызова функции возведения в степень. */
 
 public class Two {
-    public static Integer count(int a, int n, int result) {
-        if (n == 0) {
-            return result;
+    public static Integer count(int a, int n) {
+        if (n == 1) {
+            return a;
         }
-        result *= a;
-        return count(a, n - 1, result);
+        return count(a, n - 1) * count(a, 1);
     }
 }
